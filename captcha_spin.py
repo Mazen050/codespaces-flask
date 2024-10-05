@@ -11,7 +11,7 @@ def captcha_spin_ai():
 
     genai.configure(api_key="AIzaSyBiL7wsxewftNKKzZK_khOfUzRdvy7_coQ")
 
-    myfile = genai.upload_file("/workspaces/codespaces-flask/spin.png")
+    myfile = genai.upload_file("spin.png")
 
     prompt = '''Are the images aligned or not. rethink your answer'''
 
