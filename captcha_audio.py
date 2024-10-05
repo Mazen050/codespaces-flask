@@ -10,7 +10,7 @@ def captcha_audio_ai(url):
         with open("audio.mp3","wb") as f:
             f.write(doc.content)
     download_audio(url)
-    myfile = genai.upload_file("/workspaces/codespaces-flask/audio.mp3")
+    myfile = genai.upload_file("audio.mp3")
 
     prompt = '''Return only the letters you hear'''
 
