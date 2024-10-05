@@ -11,7 +11,7 @@ def captchaai_img(url):
             with open("img.jpg","wb") as f:
                 f.write(doc.content)
     download_img(url)
-    myfile = genai.upload_file("/workspaces/codespaces-flask/img.jpg")
+    myfile = genai.upload_file("img.jpg")
 
     prompt = '''Return a bounding box for the duplicated objects(2). \n [ymin, xmin, ymax, xmax] REPLY FORMAT: [ymin, xmin, ymax, xmax] FOR EACH'''
 
